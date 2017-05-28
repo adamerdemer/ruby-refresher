@@ -30,6 +30,7 @@ end
 # [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
 # make sure you don't have the same pairing twice,
 def every_possible_pairing_of_students(array)
+
 end
 
 # discard the first 3 elements of an array,
@@ -74,6 +75,7 @@ end
 
 # return the shortest word in an array
 def shortest_word_in_array(array)
+  array.min { |x,y| x.size <=> y.size }
 end
 
 # return the shortest word in an array
