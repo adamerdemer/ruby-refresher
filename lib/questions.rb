@@ -1,11 +1,11 @@
 # keep only the elements that start with an a
 def select_elements_starting_with_a(array)
-  array.select! { |element| element.start_with?('a')}
+  array.select! { |element| element.start_with?('a') }
 end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
-  array.keep_if { |element| element.start_with?("a","e","i","o","u")}
+  array.keep_if { |element| element.start_with?("a","e","i","o","u") }
 end
 
 # remove instances of nil (but NOT false) from an array
@@ -15,11 +15,13 @@ end
 
 # remove instances of nil AND false from an array
 def remove_nils_and_false_from_array(array)
+  # array.delete_if { |element| element.}
 end
 
 # don't reverse the array, but reverse every word inside it. e.g.
 # ['dog', 'monkey'] becomes ['god', 'yeknom']
 def reverse_every_element_in_array(array)
+  array.each { |element| element.reverse! }
 end
 
 # given an array of student names, like ['Bob', 'Dave', 'Clive']
